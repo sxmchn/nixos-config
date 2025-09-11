@@ -6,7 +6,8 @@
 
     settings = {
       font-family = [
-        "Maple Mono"
+        "HackNerdFont"
+        #"Maple Mono"
         "DejaVu Sans"
       ];
       font-size = "${if (host == "laptop") then "16" else "17"}";
