@@ -6,6 +6,7 @@
     nerd-fonts.fira-code
     nerd-fonts.caskaydia-cove
     nerd-fonts.symbols-only
+    nerd-fonts.hack
     twemoji-color-font
     noto-fonts-emoji
     fantasque-sans-mono
