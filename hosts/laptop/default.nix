@@ -4,6 +4,14 @@
     ./hardware-configuration.nix
     ./../../modules/core
   ];
+  
+  # Hardware Accelerated Video for Intel Graphic
+  hardware.graphics = {
+    enable = true;
+    extraPackages = with pkgs; [
+      vpl-gpu-rt
+    ];
+  };
 
   environment.systemPackages = with pkgs; [
     acpi
