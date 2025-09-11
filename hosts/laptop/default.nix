@@ -10,6 +10,8 @@
     brightnessctl
     cpupower-gui
     powertop
+    libinput-gestures
+    aircrack-ng
   ];
 
   services = {

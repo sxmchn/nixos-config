@@ -1,6 +1,6 @@
 { ... }:
 let
-  browser = "zen-beta";
+  browser = "microsoft-edge --enable-features=UseOzonePlatform --ozone-platform=wayland";
   terminal = "ghostty";
 in
 {
@@ -29,7 +29,7 @@ in
       ];
 
       input = {
-        kb_layout = "us,fr";
+        kb_layout = "us,ru";
         kb_options = "grp:alt_caps_toggle";
         numlock_by_default = true;
         repeat_delay = 300;
@@ -41,6 +41,21 @@ in
           natural_scroll = true;
         };
       };
+
+
+gestures = {
+    workspace_swipe = true;
+    workspace_swipe_distance = 700;
+    workspace_swipe_fingers = 3;
+    workspace_swipe_min_fingers = true;
+    workspace_swipe_cancel_ratio = 0.2;
+    workspace_swipe_min_speed_to_force = 5;
+    workspace_swipe_direction_lock = true;
+    workspace_swipe_direction_lock_threshold = 10;
+    workspace_swipe_create_new = true;
+};
+
+
 
       general = {
         "$mainMod" = "SUPER";
