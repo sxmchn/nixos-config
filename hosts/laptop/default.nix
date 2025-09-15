@@ -19,6 +19,7 @@
     cpupower-gui
     powertop
     libinput-gestures
+    wmctrl
     aircrack-ng
   ];
 

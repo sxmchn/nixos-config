@@ -3,7 +3,8 @@
   services = {
     xserver = {
       enable = true;
-      xkb.layout = "us,fr";
+      xkb.layout = "us,ru";
+      windowManager.fvwm2.gestures = true;
     };
 
     displayManager.autoLogin = {
