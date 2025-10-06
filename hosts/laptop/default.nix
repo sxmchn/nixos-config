@@ -5,14 +5,6 @@
     ./../../modules/core
   ];
   
-  # Hardware Accelerated Video for Intel Graphic
-  hardware.graphics = {
-    enable = true;
-    extraPackages = with pkgs; [
-      vpl-gpu-rt
-    ];
-  };
-
   environment.systemPackages = with pkgs; [
     acpi
     brightnessctl
@@ -21,6 +13,8 @@
     libinput-gestures
     wmctrl
     aircrack-ng
+    minicom
+    inetutils 
   ];
 
   services = {
