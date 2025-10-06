@@ -80,6 +80,14 @@
             inherit self inputs username;
           };
         };
+        portable = nixpkgs.lib.nixosSystem {
+          inherit system;
+          modules = [ ./hosts/portable ];
+          specialArgs = {
+            host = "portable";
+            inherit self inputs username;
+          };
+        };
         vm = nixpkgs.lib.nixosSystem {
           inherit system;
           modules = [ ./hosts/vm ];
