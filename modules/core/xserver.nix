@@ -4,6 +4,7 @@
     xserver = {
       enable = true;
       xkb.layout = "us,ru";
+      videoDrivers = [ "intel" ];
     };
 
     displayManager.autoLogin = {
