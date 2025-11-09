@@ -30,7 +30,7 @@ in
 
       input = {
         kb_layout = "us,ru";
-        kb_options = "grp:alt_caps_toggle";
+        kb_options = "grp:win_space_toggle";
         numlock_by_default = true;
         repeat_delay = 300;
         follow_mouse = 0;
@@ -159,8 +159,8 @@ in
         "$mainMod, Q, killactive,"
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
-        "$mainMod, Space, exec, toggle-float"
-        "$mainMod, D, exec, rofi -show drun || pkill rofi"
+        # "$mainMod, Space, exec, toggle-float"
+        "CTRL, Space, exec, rofi -show drun || pkill rofi"
         "$mainMod SHIFT, D, exec, webcord --enable-features=UseOzonePlatform --ozone-platform=wayland"
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
