@@ -43,8 +43,11 @@
     neofetch
     nitch                             # systhem fetch util
     onefetch                          # fetch utility for git repo
+    
+    ## Network
     wavemon                           # monitoring for wireless network devices
     iw
+    nmap
 
     ## Fun / screensaver
     asciiquarium-transparent
@@ -85,5 +88,6 @@
 
     winetricks
     wineWowPackages.waylandFull
+    grc
   ];
 }
